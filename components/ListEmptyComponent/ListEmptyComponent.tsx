@@ -5,6 +5,7 @@ import {FULL_HEIGHT} from '../../utils';
 
 export const ListEmptyComponent: React.FC = () => {
   const headerHeight = useHeaderHeight();
+
   return (
     <View style={[styles.container, {minHeight: FULL_HEIGHT - headerHeight}]}>
       <Text>Список пуст...</Text>
